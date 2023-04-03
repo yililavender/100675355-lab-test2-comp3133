@@ -8,6 +8,10 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
+  "repository": {
+      "type": "git",
+     "url": "git+https://github.com/yililavender/100675355-lab-test2-comp3133.git"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "^15.2.0",
