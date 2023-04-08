@@ -10,11 +10,11 @@ import { Mission } from '../models/Mission';
   styleUrls: ['./missiondetails.component.css']
 })
 export class MissiondetailsComponent implements OnInit{
+  @Input()
+  mission!: Mission;
+  
   ngOnInit(): void {
-    this.getMissionByFlightNumber()
-  }
-
-  @Input() mission?: Mission
+    this.getMissionByFlightNumber()}
 
   constructor(private route: ActivatedRoute,private missionService: MissionService,private location: Location
   ) { }
@@ -25,6 +25,7 @@ export class MissiondetailsComponent implements OnInit{
       this.mission = this.missionService.getByFlightNumber(Number(id))
     }
   }
+
 
   Back(): void {
     this.location.back();

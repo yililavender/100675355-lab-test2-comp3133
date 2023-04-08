@@ -2,10 +2,10 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 
-
+import { MatCardModule } from '@angular/material/card';
 import { AppComponent } from './app.component';
 import { MissionlistComponent } from './missionlist/missionlist.component';
-import { MissionfilterComponent } from './missionfilter/missionfilter.component';
+
 import { MissiondetailsComponent } from './missiondetails/missiondetails.component';
 import { AppRoutingModule } from './app-routing.module';
 
@@ -13,13 +13,13 @@ import { AppRoutingModule } from './app-routing.module';
   declarations: [
     AppComponent,
     MissionlistComponent,
-    MissionfilterComponent,
     MissiondetailsComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
